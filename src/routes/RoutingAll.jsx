@@ -4,6 +4,9 @@ import Login from "../components/Auth/login";
 import SignUp from "../components/Auth/signUp";
 import Home from "../components/home";
 import Appointments from "../features/appointments/appointments";
+import Activities from "../features/daycare/Activities";
+import ActivityDetail from "../features/daycare/ActivityDetail";
+
 
 export const RoutingAll = () => {
   return (
@@ -19,6 +22,8 @@ export const RoutingAll = () => {
         }
       />
       <Route path="/appointments" element={<Appointments />} />
+      <Route path="/activities" element={<PrivateRoute><Activities /></PrivateRoute>} />
+      <Route path="/activities/:id" element={<PrivateRoute><ActivityDetail /></PrivateRoute>} />
     </Routes>
   );
 };
