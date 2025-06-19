@@ -1,0 +1,33 @@
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: rgb(46, 46, 238);
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.navbar-title {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 20px;
+  
+}
+
+.navbar-link {
+  text-decoration: none;
+  color: white;
+}
+
+.logout-button {
+  color: white;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}

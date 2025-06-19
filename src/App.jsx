@@ -1,13 +1,17 @@
-import "./App.css";
+
+import './App.css'
+import Navbar from './components/navbar'
+import RoutingAll from './routes/RoutingAll'
+
 
 function App() {
+
   return (
     <>
-      <div>
-        <h1>Encatch</h1>
-      </div>
+    <Navbar/>
+    <RoutingAll/>
     </>
-  );
+  )
 }
 
-export default App;
+export default App
