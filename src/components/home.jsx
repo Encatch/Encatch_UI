@@ -28,7 +28,7 @@ const imageData = [
   { title: "APPOINTMENTS", url: image1, link: "/appointments" },
   { title: "RESOURCES", url: image2, link: "/page1" },
   { title: "ASSIGNMNETS", url: image3, link: "/page1" },
-  { title: "DAY CARE", url: image4, link: "/page1" },
+  { title: "DAY CARE", url: image4, link: "/activities" },
   { title: "PRODUCTS", url: image5, link: "/page1" },
   { title: "FEES", url: image6, link: "/page1" },
   { title: "ONLINE CLASSES", url: image7, link: "/page1" },
