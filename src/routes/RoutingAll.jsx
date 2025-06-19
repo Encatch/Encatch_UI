@@ -6,6 +6,8 @@ import Home from "../components/home";
 import Appointments from "../features/appointments/appointments";
 import Activities from "../features/daycare/Activities";
 import ActivityDetail from "../features/daycare/ActivityDetail";
+import AttendanceTable from "../features/attendance/AttendanceTable";
+import StudentDetails from "../features/attendance/StudentDetails";
 
 
 import Assignments from "../features/assignments/Assignments";
@@ -31,7 +33,10 @@ export const RoutingAll = () => {
       <Route path="/classes" element={<PrivateRoute><Assignments /></PrivateRoute>} />
       <Route path="/assignments/:classId" element={<PrivateRoute><Subjects /></PrivateRoute>} />
       <Route path="/assignments/:classId/:subject" element={<PrivateRoute><SubjectAssignment /></PrivateRoute>} />
-</Routes>
+
+      <Route path="/attendance" element={<PrivateRoute><AttendanceTable /></PrivateRoute>} />
+      <Route path="/attendance/student/:id" element={<PrivateRoute><StudentDetails /></PrivateRoute>} />
+    </Routes>
   );
 };
 

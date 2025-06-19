@@ -34,7 +34,7 @@ const imageData = [
   { title: "ONLINE CLASSES", url: image7, link: "/page1" },
   { title: "CIRCULARS", url: image8, link: "/page1" },
   { title: "NOTIFICATIONS", url: image9, link: "/page1" },
-  { title: "ATTENDENCE", url: image10, link: "/page1" },
+  { title: "ATTENDENCE", url: image10, link: "/attendance" },
   { title: "CALENDAR", url: image11, link: "/page1" },
   { title: "HOMEWORK", url: image12, link: "/page1" },
   { title: "SHOWCASE", url: image13, link: "/page1" },
