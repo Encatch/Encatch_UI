@@ -1,0 +1,98 @@
+/* Layout spacing */
+.calendar-layout {
+  display: flex;
+  gap: 24px;
+}
+
+/* Mini Calendar */
+.mini-calendar {
+  width: 180px;
+  font-size: 0.75rem;
+  padding: 10px;
+  background-color: #f7f7f7;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.mini-calendar-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.mini-calendar-table th,
+.mini-calendar-table td {
+  border: 1px solid #ccc;
+  padding: 4px;
+  width: 14.28%;
+  height: 24px;
+}
+
+.mini-cell {
+  background-color: #f0f0f0;
+  font-weight: bold;
+}
+
+/* View button spacing */
+.view-buttons-horizontal {
+  margin-bottom: 10px;
+  gap: 8px;
+}
+
+.button-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+/* Center buttons */
+.centered-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+/* Main Calendar Box */
+.calendar-box {
+  border: 2px solid #888;
+  border-radius: 8px;
+  padding: 16px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+/* Main calendar styling */
+.calendar-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  border: 2px solid #ccc;
+}
+
+.calendar-table th,
+.calendar-table td {
+  border: 1px solid #ccc;
+  width: 14.28%;
+  height: 120px;
+  padding: 8px;
+  box-sizing: border-box;
+  text-align: left;
+  vertical-align: top;
+  background-color: #fff;
+}
+
+.active-cell {
+  background-color: #fefefe;
+}
+
+.date-number {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.event-text {
+  font-size: 0.85rem;
+  margin-top: 4px;
+  color: #444;
+}
