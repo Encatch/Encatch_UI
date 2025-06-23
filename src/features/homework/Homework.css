@@ -1,0 +1,42 @@
+.homework-container {
+  padding: 20px;
+  text-align: center;
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.class-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.class-box {
+  padding: 15px 25px;
+  border-radius: 10px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.2rem;
+  transition: transform 0.3s;
+}
+
+.class-box:hover {
+  transform: scale(1.05);
+}
+
+/* 🎨 Different colors for each class */
+.class-1  { background-color: #e74c3c; }  /* Red */
+.class-2  { background-color: #2ecc71; }  /* Green */
+.class-3  { background-color: #3498db; }  /* Blue */
+.class-4  { background-color: #9b59b6; }  /* Purple */
+.class-5  { background-color: #f39c12; }  /* Orange */
+.class-6  { background-color: #1abc9c; }  /* Turquoise */
+.class-7  { background-color: #e67e22; }  /* Carrot */
+.class-8  { background-color: #34495e; }  /* Dark Blue */
+.class-9  { background-color: #d35400; }  /* Dark Orange */
+.class-10 { background-color: #16a085; }  /* Teal */

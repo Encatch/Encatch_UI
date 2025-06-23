@@ -14,7 +14,7 @@ export const Navbar = () => {
 
   return (
     <div className="navbar">
-      <Link to="/" className="navbar-title">APP</Link>
+      <Link to="/" className="navbar-title">ENCATCH</Link>
       <div className="navbar-links">
         {!isAuthenticated ? (
           <>

@@ -8,8 +8,9 @@ import Activities from "../features/daycare/Activities";
 import ActivityDetail from "../features/daycare/ActivityDetail";
 import AttendanceTable from "../features/attendance/AttendanceTable";
 import StudentDetails from "../features/attendance/StudentDetails";
-
-
+import Circulars from "../features/circular/Circulars";
+import Homework from "../features/homework/Homework";
+import SchoolResources from "../features/resources/SchoolResources";
 import Assignments from "../features/assignments/Assignments";
 import Subjects from "../features/assignments/Subjects";
 import SubjectAssignment from "../features/assignments/SubjectAssignment";
@@ -29,14 +30,18 @@ export const RoutingAll = () => {
       <Route path="/appointments" element={<Appointments />} />
       <Route path="/activities" element={<PrivateRoute><Activities /></PrivateRoute>} />
       <Route path="/activities/:id" element={<PrivateRoute><ActivityDetail /></PrivateRoute>} />
-
+      <Route path="/resources" element={<SchoolResources />} />
       <Route path="/classes" element={<PrivateRoute><Assignments /></PrivateRoute>} />
       <Route path="/assignments/:classId" element={<PrivateRoute><Subjects /></PrivateRoute>} />
       <Route path="/assignments/:classId/:subject" element={<PrivateRoute><SubjectAssignment /></PrivateRoute>} />
 
       <Route path="/attendance" element={<PrivateRoute><AttendanceTable /></PrivateRoute>} />
       <Route path="/attendance/student/:id" element={<PrivateRoute><StudentDetails /></PrivateRoute>} />
-    </Routes>
+   
+      <Route path="/circulars" element={<Circulars />} />
+      <Route path="/homework" element={<Homework />} />
+      
+</Routes>
   );
 };
 
