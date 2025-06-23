@@ -14,6 +14,9 @@ import SchoolResources from "../features/resources/SchoolResources";
 import Assignments from "../features/assignments/Assignments";
 import Subjects from "../features/assignments/Subjects";
 import SubjectAssignment from "../features/assignments/SubjectAssignment";
+import CalendarApp from "../Calendar/CalendarApp";
+
+
 export const RoutingAll = () => {
   return (
     <Routes>
@@ -41,6 +44,7 @@ export const RoutingAll = () => {
       <Route path="/circulars" element={<Circulars />} />
       <Route path="/homework" element={<Homework />} />
       
+      <Route path="/calendar" element={<PrivateRoute><CalendarApp /></PrivateRoute>} />
 </Routes>
   );
 };
