@@ -29,7 +29,7 @@ const imageData = [
   { title: "Day Care", url: image4, link: "/activities" },
   { title: "Assignments", url: image3, link: "/classes" },
   { title: "Products", url: image5, link: "/page1" },
-  { title: "Fees", url: image6, link: "/page1" },
+  { title: "Fees", url: image6, link: "/fees" },
   { title: "Online Classes", url: image7, link: "/page1" },
   { title: "Circulars", url: image8, link: "/Circulars" },
   { title: "Notifications", url: image9, link: "/page1" },
