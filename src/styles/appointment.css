@@ -1,4 +1,4 @@
-.appointments-page {
+.appointment-page {
   max-width: 800px;
   margin: 40px auto;
   padding: 30px;
@@ -8,7 +8,7 @@
   font-family: 'Segoe UI', sans-serif;
 }
 
-.appointments-page h1 {
+.appointment-page h1 {
   text-align: center;
   color: #333;
   margin-bottom: 30px;

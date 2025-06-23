@@ -1,0 +1,52 @@
+/* Circulars.css */
+
+.circulars-container {
+  padding: 30px;
+  background-color: #f0f4f8; /* light blue-gray */
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.circulars-heading {
+  font-size: 28px;
+  color: #2c3e50; /* dark slate */
+  margin-bottom: 25px;
+  border-bottom: 3px solid #3498db; /* blue */
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.circulars-list {
+  list-style: none;
+  padding: 0;
+}
+
+.circular-card {
+  background-color: #ffffff;
+  border-left: 6px solid #3498db; /* primary accent blue */
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease-in-out;
+}
+
+.circular-card:hover {
+  transform: translateY(-4px);
+}
+
+.circular-card h3 {
+  margin: 0 0 8px;
+  font-size: 20px;
+  color: #2c3e50;
+}
+
+.circular-card p {
+  margin: 4px 0;
+  font-size: 15px;
+  color: #555;
+}
+
+.circular-card strong {
+  color: #e67e22; /* orange for dates */
+}
