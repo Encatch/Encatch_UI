@@ -45,9 +45,6 @@ export const RoutingAll = () => {
       <Route path="/homework" element={<Homework />} />
       
       <Route path="/calendar" element={<PrivateRoute><CalendarApp /></PrivateRoute>} />
-
-      
-
 </Routes>
   );
 };
