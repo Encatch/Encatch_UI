@@ -15,6 +15,9 @@ import Assignments from "../features/assignments/Assignments";
 import Subjects from "../features/assignments/Subjects";
 import SubjectAssignment from "../features/assignments/SubjectAssignment";
 import CalendarApp from "../Calendar/CalendarApp";
+// Fee pages
+import FeesList from "../features/fees/FeeList";
+import FeeDetails from "../features/fees/FeeDetails";
 
 
 export const RoutingAll = () => {
@@ -26,7 +29,7 @@ export const RoutingAll = () => {
         path="/"
         element={
           <PrivateRoute>
-            <Home />
+            <Home /> 
           </PrivateRoute>
         }
       />
@@ -45,6 +48,9 @@ export const RoutingAll = () => {
       <Route path="/homework" element={<Homework />} />
       
       <Route path="/calendar" element={<PrivateRoute><CalendarApp /></PrivateRoute>} />
+
+             <Route path="/fees" element={<PrivateRoute><FeesList /></PrivateRoute>} />
+      <Route path="/fee/:id" element={<PrivateRoute><FeeDetails /></PrivateRoute>} /> 
 </Routes>
   );
 };
