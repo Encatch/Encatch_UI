@@ -54,6 +54,10 @@ _if you got conflicts_ 🥲 resolve.. and save files
 
 > (repeat step1) continue rebasing until all the conflict got resolved.
 
+>at any point of time you want to stop 🛑 the rebasing process. 
+
+`git rebase --abort`
+
 _if no conflicts_ 😁
 
 > change remoteBranchName ex: feat/appointments
@@ -61,9 +65,7 @@ _if no conflicts_ 😁
 `git push -u origin localBranchName:remoteBranchName`
 
 
->at any point of time you want to stop 🛑 the rebasing process. 
-
-`git rebase --abort`
+---
 
 
 🎉 congrats! you have successfully push your changes
