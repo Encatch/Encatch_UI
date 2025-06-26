@@ -1,7 +1,7 @@
 
 import { Link, useNavigate } from "react-router-dom";
-import { useAuth } from "../contexts/AuthContext";
 import "../styles/navbar.css"
+import { useAuth } from "../features/Auth/contexts/AuthContext";
 
 export const Navbar = () => {
   const { isAuthenticated, logout } = useAuth();
@@ -14,18 +14,13 @@ export const Navbar = () => {
 
   return (
     <div className="navbar">
-      <Link to="/" className="navbar-title">ENCATCH</Link>
-      <div className="navbar-links">
-        {!isAuthenticated ? (
-          <>
-            <Link to="/login" className="navbar-link">Login</Link>
-            <Link to="/signUp" className="navbar-link">Sign Up</Link>
-          </>
-        ) : (
-          <button onClick={handleLogout} className="logout-button">Logout</button>
+      <h1 className="navbar-title">Encatch</h1>
+        {isAuthenticated && (
+          <div className="navbar-links">
+            <button onClick={handleLogout} className="logout-button">Logout</button>
+          </div>
         )}
       </div>
-    </div>
   );
 };
 
