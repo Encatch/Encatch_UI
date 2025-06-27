@@ -32,8 +32,8 @@ export const Login = () => {
 
   return (
     <div className="auth-wrapper">
-      <div className="auth-left">
-        <h2>Welcome Back!</h2>
+      <div className="auth-left image-container">
+        <h2>Encatch Services</h2>
         <p>Connect and manage your account easily.</p>
         {/* You can add Lottie animation or Image here */}
         {/* <img src="/login-illustration.svg" alt="login" className="auth-image" /> */}
@@ -59,7 +59,7 @@ export const Login = () => {
             required
           />
 
-          <div className="auth-row">
+          {/* <div className="auth-row">
             <label>
               <input
                 type="checkbox"
@@ -70,7 +70,7 @@ export const Login = () => {
               Remember me
             </label>
             <Link to="#">Forgot password?</Link>
-          </div>
+          </div> */}
 
           <button type="submit">Login</button>
 
