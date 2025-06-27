@@ -1,7 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import PrivateRoute from "./PrivateRoute";
-import Login from "../components/Auth/login";
-import SignUp from "../components/Auth/signUp";
+import Login from "../features/Auth/login";
+import SignUp from "../features/Auth/signUp";
 import Home from "../components/home";
 import Appointments from "../features/appointments/appointments";
 import Activities from "../features/daycare/Activities";

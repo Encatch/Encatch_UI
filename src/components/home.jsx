@@ -22,6 +22,7 @@ import image18 from "../assets/logoimages/support.png";
 import image19 from "../assets/logoimages/settings.png";
 import image20 from "../assets/logoimages/degital content.png";
 import image21 from "../assets/logoimages/profile.jpg";
+import Navbar from "./navbar";
 
 const imageData = [
   { title: "Appointments", url: image1, link: "/appointments" },
@@ -49,7 +50,9 @@ const imageData = [
 
 const Home = () => {
   return (
-    <div className="grid">
+    <>
+    <Navbar />
+        <div className="grid">
       {imageData.map((item, index) => (
         <Link
           to={item.link}
@@ -63,6 +66,8 @@ const Home = () => {
         </Link>
       ))}
     </div>
+    </>
+
   );
 };
 
