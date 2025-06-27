@@ -24,9 +24,9 @@
   align-items: center;
   justify-content: center;
   background: #ffffff;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgb(37, 255, 248);
-  transition: transform 0.2s ease;
+  border-radius: 12px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
   padding: 10px;
   text-align: center;
 }
@@ -47,12 +47,12 @@
 
 /* Hover effect */
 .card:hover {
-  transform: scale(1.05);
+  transform: scale(1.02);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
 /* Container holding the grid */
 .home-container {
-  width: 100%;
   overflow: hidden;
-  padding-top: 80px; /* to give space for fixed navbar */
+  
 }
