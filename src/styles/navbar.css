@@ -9,12 +9,15 @@ html, body, #root {
 /* Navbar container */
 /* Navbar container with animated gradient background */
 .navbar {
-  height: 70px;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  background: linear-gradient(to right, hsl(324, 69%, 23%), #011643);
+  
+  background: linear-gradient(90deg, #6c47ff 0%, #42e695 100%);
+  background-size: 200% 200%;
+  /* animation: gradientShift 6s ease-in-out infinite; */
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -56,14 +59,15 @@ html, body, #root {
 }
 
 .logout-button {
-  color: #e0e0e0;
-  background: transparent;
-  border: 1px solid #6c47ff;
-  padding: 6px 12px;
-  border-radius: 4px;
-  font-weight: 500;
+  color: #000;
+  /* background: linear-gradient(90deg, #6c47ff 0%, #42e695 100%); */
+  border: none;
+  padding: 8px 18px;
+  border-radius: 20px;
+  font-weight: 600;
   cursor: pointer;
-  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(108, 71, 255, 0.12);
+  /* transition: background 0.3s, color 0.3s, box-shadow 0.3s; */
 }
 
 .logout-button:hover {
