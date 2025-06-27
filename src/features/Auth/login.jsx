@@ -48,6 +48,7 @@ export const Login = () => {
             placeholder="Email or Phone number"
             value={formData.emailOrPhone}
             onChange={handleChange}
+            autoComplete="off"
             required
           />
           <input
@@ -56,6 +57,8 @@ export const Login = () => {
             placeholder="Password"
             value={formData.password}
             onChange={handleChange}
+            autoComplete="off"
+            security="true"
             required
           />
 

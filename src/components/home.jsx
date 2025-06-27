@@ -52,7 +52,9 @@ const Home = () => {
   return (
     <>
     <Navbar />
-        <div className="grid">
+    <div className="home-container">
+            <div className="grid">
+
       {imageData.map((item, index) => (
         <Link
           to={item.link}
@@ -66,6 +68,9 @@ const Home = () => {
         </Link>
       ))}
     </div>
+
+    </div>
+  
     </>
 
   );

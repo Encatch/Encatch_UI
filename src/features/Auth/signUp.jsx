@@ -76,7 +76,7 @@ export const SignUp = () => {
             required
           />
 
-          <label style={{ fontSize: "14px", color:"#ccc" }}>
+          <label style={{ fontSize: "14px" }}>
             <input
               type="checkbox"
               name="agree"
