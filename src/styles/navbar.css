@@ -9,12 +9,14 @@ html, body, #root {
 /* Navbar container */
 /* Navbar container with animated gradient background */
 .navbar {
-  height: 70px;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  background: linear-gradient(to right, hsl(324, 69%, 23%), #011643);
+  background: linear-gradient(90deg, #6c47ff 0%, #170367 50%, #011643 100%);
+  background-size: 200% 200%;
+  /* animation: gradientShift 6s ease-in-out infinite; */
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 

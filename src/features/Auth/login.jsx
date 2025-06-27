@@ -49,7 +49,7 @@ export const Login = () => {
             value={formData.emailOrPhone}
             onChange={handleChange}
             autoComplete="off"
-            required
+            // required
           />
           <input
             type="password"
@@ -59,7 +59,7 @@ export const Login = () => {
             onChange={handleChange}
             autoComplete="off"
             security="true"
-            required
+            // required
           />
 
           {/* <div className="auth-row">
